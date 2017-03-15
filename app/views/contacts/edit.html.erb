@@ -1,0 +1,36 @@
+edit.html.erb
+<%= form_tag "/contacts/#{@contact.id}", method: :patch do %>
+  <p> </p>
+  <div>
+  <label name="first_name">First Name: </label> 
+  </div>
+  <div>
+  <input type="text" name="first_name" value="<%= @contact.first_name %>">
+  </div>
+    <div>
+  <label name="last_name">Last Name: </label> 
+  </div>
+  <div>
+  <input type="text" name="last_name" value="<%= @contact.last_name %>">
+  </div>
+    <div>
+  <label name="email">Email: </label> 
+  </div>
+  <div>
+  <input type="text" name="email" value="<%= @contact.email %>">
+  </div>
+    <div>
+  <label name="phone_number">Phone Number: </label> 
+  </div>
+  <div>
+  <input type="text" name="phone_number" value="<%= @contact.phone_number %>">
+  </div>
+  <div>
+  <input type="submit" value="Submit Updated Contact">
+  </div>
+<% end %>
+<%= form_tag "/contacts/#{@contact.id}", method: :post do %>
+  <div>
+  <input type="submit" value="Submit Updated Contact2>
+  </div>
+<% end %>

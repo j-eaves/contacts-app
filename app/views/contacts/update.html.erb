@@ -1,0 +1,14 @@
+update.html.erb
+<%= form_tag "/contacts/#{@contact.id}", method: :patch do %>
+  <p> </p>
+  <p> FIRST NAME:</p> 
+  <input type="text" name="first_name">
+  <p> LAST NAME:</p>
+  <input type="text" name="last_name">
+  <p> EMAIL:</p>
+  <input type="text" name="email">
+  <p> PHONE NUMBER:</p>
+  <input type="text" name="phone_number">
+  <p> </p>
+  <input type="submit" value="Submit Updated Contact!!">
+  <% end %>

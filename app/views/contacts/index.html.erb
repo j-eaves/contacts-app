@@ -1,0 +1,13 @@
+<h5><b><u>Contacts: </b></u></h5>
+<% @contacts.each do |contact| %>
+  <% if contact.first_name == nil %>
+    <%  %>
+  <% else %>
+  <p>----------</p>
+  <p> ID: <%=  contact.id %></p>
+  <p> FIRST NAME: <%=  contact.first_name %></p>
+  <p> LAST NAME: <%=  contact.last_name %></p>
+  <p> EMAIL: <%=  contact.email %></p>
+  <p> PHONE NUMBER: <%=  contact.phone_number %></p>
+  <% end %>
+<% end %>

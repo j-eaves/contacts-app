@@ -1,0 +1,15 @@
+show.html.erb
+<h5><b>Your Contact:</b></h5>
+<p><%= @contact.first_name %></p>
+<p><%= @contact.last_name %></p>
+<p><%= @contact.email %></p>
+<p><%= @contact.phone_number %></p>
+<p> </p>
+
+<p><a href="/index">Back to index</a></p>
+
+<%= form_tag "/contacts/#{@contact.id}", method: :delete do %>
+  <div>
+  <input type="submit" value="Destroy Contact">
+  </div>
+<% end %>
